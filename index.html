@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatPDF</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div id="main">
+    <div class="dispnone" id="sidepanel">
+        <div id="homebtn">  <img src="./images/others/chatpdf.png" width="30px" alt="">CHAT PDF</div>
+        <hr>
+        <div id="options">
+            <div id="opt1" class="opt">
+                <img src="./images/svg/about-filled-svgrepo-com.svg" alt="">
+                 About
+            </div>
+            <div id="opt2" class="opt">
+                <img src="./images/svg/setting-2-svgrepo-com.svg" alt="">
+                 Setting
+            </div>
+            <div id="opt3" class="opt">
+                <img src="./images/svg/license-svgrepo-com.svg" alt="">
+                license
+
+            </div>
+        </div>
+    </div>
+       <div id="chatbot">
+            <div id="HeadContainer">
+                <div id="cha">
+                    <div id="hamContainer"><button id="sidebtn" type="button"><img src="./images/svg/hamburger-6-svgrepo-com (1).svg" alt=""></button></div>
+                    <div id="name1"><p id="name2">CHAT PDF</p></div>
+                    <div id="title1"><div id="title" onclick="exportToPDF()" class="dispnone"></div></div>
+                </div>
+                
+            </div>
+            <div id="chat">
+                <div  id="suggestionBox">
+                    <div class="suggestion1">
+                        &rarr; Hey ChatPDF, what can I do with this PDF?
+                    </div>
+                    <div class="suggestion1">
+                        &rarr; Hey ChatPDF, summarize this for me and let me know what I can do with it.
+                    </div>
+                   
+            </div>
+            </div>
+        <footer>
+            <div class="div1"></div>
+            <div id="userInputContainer">
+                <div id="userInputBox">
+                    <input type="text" placeholder="Message" id="userInput">
+                    <div id="sendBTN">
+                        <button id="send" type="button"><img src="./images/svg/send-alt-1-svgrepo-com.svg" alt=""></button>
+                    </div>
+                       
+                </div>
+                <button title="Add pdf" id="addPDF" type="button"><img src="./images/svg/add-circle-svgrepo-com.svg" alt=""></button>
+            </div>
+            <div class="div1"></div>
+           
+        </footer>
+       </div>
+</div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>

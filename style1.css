@@ -47,72 +47,60 @@ html {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
 } */
-html {
+html{
     height: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto",sans-serif;
     overflow-x: hidden;
 }
-
-body {
-    margin: 0px;
+body{
+    margin: 0px ;
     padding: 0px;
     height: 100%;
     border: 0px;
     overflow-x: hidden;
     background-color: #121b22;
-
+    
 }
-
-#main {
+#main{
     display: flex;
-    color: white;
+    color: white ;
     /* background-color: #212121; */
     height: 100%;
 }
+#sidepanel{
 
-#sidepanel {
-
-    width: 250px;
+    width:250px ;
     display: flex;
     flex-direction: column;
     background-color: #22303b;
     padding: 20px;
     overflow-x: hidden;
-
+    
 }
-
-.dispnone {
+.dispnone{
     display: none !important;
 }
-
-hr {
+hr{
     width: 200px;
 }
-
-.opt {
+.opt{
     display: flex;
     padding: 10px;
     align-items: center;
-
-    img {
+    img{
         margin: 0px 5px;
     }
-
     cursor: pointer;
 }
-
-#homebtn {
+#homebtn{
     display: flex;
     align-items: center;
-
-    img {
+    img{
         margin: 0px 10px;
     }
-
     cursor: pointer;
 }
-
-#chatbot {
+#chatbot{
     background-color: #121b22;
     display: flex;
     flex-direction: column;
@@ -122,26 +110,33 @@ hr {
     height: 100%;
     flex-shrink: 1;
 }
-
-#hamContainer {
+#chatMain{
+    display: flex;
+    padding: auto;
+    height: 100%;
+    padding-top: 20px;
+}
+.blankDiv{
+    flex: 1;
+    flex-shrink: auto;
+}
+#hamContainer{
     display: flex;
     justify-content: center;
-
-    img {
+    
+    img{
         width: 45px;
         cursor: pointer;
     }
-
+    
 
 }
-
-a {
+a{
     text-decoration: none;
     color: white;
     text-align: center;
 }
-
-#name1 {
+#name1{
     display: flex;
     /* flex-grow: 1; */
     align-items: center;
@@ -153,75 +148,67 @@ a {
     flex: 1;
 }
 
-#name2 {
+#name2{
     cursor: pointer;
 }
-
-#HeadContainer {
+#HeadContainer{
     /* display: flexbox; */
     color: white;
     height: 50px;
     position: sticky;
     width: 100%;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     max-width: 100%;
     left: 0px;
     top: 0px;
 
 }
-
-#cha {
+#cha{
     display: flex;
-    max-width: 100%;
+    max-width:  100%;
     justify-content: space-between;
     align-items: center;
     background-color: #1f2c34;
 }
-
-#title1 {
+#title1{
     padding: 0px 10px;
 }
-
-#title {
+#title{
     padding: 5px 20px;
     border-radius: 10px;
     background-color: #26252d;
     justify-self: flex-end;
-    cursor: pointer;
+    cursor: pointer ;
 }
-
-img {
+img{
     width: 30px;
 }
-
-.playpauseimg {
+.playpauseimg{
     width: 20px;
 }
-
-#chat {
+#chat{
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
-    overflow-y: auto;
+    /* padding: 10px 20px; */
+    overflow-y:auto;
     overflow-x: hidden;
     margin: 10px 0px;
     /* margin-top: 80px; */
+    flex-shrink: 0;
+    flex: 4;
     max-width: 100%;
 }
-
-#userInputContainer {
+#userInputContainer{
     display: flex;
     margin: 10px;
-    flex-grow: 2;
+    flex-grow:2;
     height: 50px;
 }
-
-.div1 {
-    flex-grow: 1;
+.div1{
+    flex-grow: 2;
 }
-
-footer {
+footer{
     width: 100%;
     display: flex;
     align-items: center;
@@ -229,10 +216,9 @@ footer {
     position: sticky;
     bottom: 0px;
     right: 0px;
-
+    
 }
-
-#userInputBox {
+#userInputBox{
     display: flex;
     /* flex: 100%; */
     flex-grow: 1;
@@ -245,28 +231,22 @@ footer {
     flex-shrink: 1;
 
 }
-
-#userInput {
+#userInput{
     flex-grow: 1;
     background-color: #1e282f;
     border: none;
     color: white;
     height: 80%;
     font-size: 1.2rem;
-}
-
-::placeholder {
+}::placeholder {
     color: white;
-    opacity: .7;
-    /* Firefox */
-}
-
-#suggestionBox {
+    opacity: .7; /* Firefox */
+  }
+#suggestionBox{
     display: flexbox;
     width: 100%;
 }
-
-.suggestion1 {
+.suggestion1{
     background-color: #075e55;
     padding: 15px;
     margin: 10px 0px;
@@ -275,18 +255,16 @@ footer {
     flex-shrink: 1;
     cursor: pointer;
 }
-
-.userip {
+.userip{
     display: flex;
     justify-content: flex-start;
 
     padding: 5px;
-    justify-self: flex-end;
+    justify-self : flex-end; 
     width: 100%;
-
-}
-
-.userIn {
+    
+}   
+.userIn{
     display: flex;
     background-color: #075e55;
     margin: 0px 5px;
@@ -294,17 +272,15 @@ footer {
     padding: 10px;
     max-width: 80%;
 
-}
-
-.botres {
+}   
+.botres{
     display: flex;
     padding: 5px;
     justify-content: flex-end;
     /* align-items: flex-start; */
-
-}
-
-.botResponse {
+    
+}   
+.botResponse{
     display: flex;
     background-color: #075e55;
     margin: 0px 5px;
@@ -312,21 +288,18 @@ footer {
     padding: 10px;
     align-items: baseline;
     /* text-align: center; */
-}
-
-.audio1 {
+}   
+.audio1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%;
 }
-
-.audioplay {
+.audioplay{
     position: relative;
     top: 20px;
 }
-
-button {
+button{
     background-color: #00000000;
     border: none;
     cursor: pointer;
@@ -334,41 +307,47 @@ button {
 
 @media screen and (max-width: 600px) {
     #sidepanel {
-        position: absolute;
-        z-index: 1;
-        height: 94vh;
+     position: absolute;
+     z-index: 1;
+     height: 94vh;
 
     }
-
-    .suggestion1 {
+    .suggestion1{
         min-width: 100px;
     }
-}
-
-.loader {
+    .blankDiv{
+        width: 0px !;
+        flex: 0.2;
+    }
+  }
+  .loader {
     width: 20px;
     height: 3px;
-    -webkit-mask: linear-gradient(90deg, #000 70%, #0000 0) 0/20%;
+    -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/20%;
     background:
-        linear-gradient(#ddd 0 0) 0/0% no-repeat #26252d;
+     linear-gradient(#ddd 0 0) 0/0% no-repeat
+     #26252d;
     animation: l4 2s infinite steps(6);
-}
+  }
+  @keyframes l4 {
+      100% {background-size:120%}
+  }
 
-@keyframes l4 {
-    100% {
-        background-size: 120%
-    }
-}
-
-#chat::-webkit-scrollbar {
+  #chat::-webkit-scrollbar {
     width: .7em;
-}
-
-#chat::-webkit-scrollbar-track {
+  }
+   
+  #chat::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px #2121214d;
-}
-
-#chat::-webkit-scrollbar-thumb {
+  }
+   
+ #chat::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
-}
+  }
+  @media screen and (max-width: 425px){
+   
+  }
+
+
+  
